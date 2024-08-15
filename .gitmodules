@@ -1,0 +1,3 @@
+[submodule "src/constants"]
+	path = src/constants
+	url = https://github.com/subooom/meditatexp_constants
