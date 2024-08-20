@@ -1,9 +1,9 @@
 import { HasTimestamps } from 'src/database/interfaces/HasTimestamps';
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
-import { IUsers } from '../interfaces/user.interface';
+import { INotification } from '../interfaces/notification.interface';
 
 @Entity()
-export class Users extends HasTimestamps implements IUsers {
+export class Notification extends HasTimestamps implements INotification {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 

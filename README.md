@@ -4,6 +4,18 @@
   </a>
 </p>
 
+Update `src/constants` submodule with:
+
+```bash
+$ git submodule update --remote --merge
+```
+
+To push all the changes to the repo and the submodule at once do:
+
+```bash
+$ git push --recurse-submodules=on-demand
+```
+
 This boilerplate is for NestJS enthusiasts who quickly want to get a boilerplate for a more roubust NestJS web application. The implemented features in this boilerplate include:
 
 <ul>

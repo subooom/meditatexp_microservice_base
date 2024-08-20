@@ -6,12 +6,12 @@ import {
 } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 import { AuthCredentialsDto } from './dto/auth-credentials.dto';
-import { Users } from './entities/user.entity';
+import { Notification } from './entities/notification.entity';
 
 @Injectable()
-export class UsersRepository extends Repository<Users> {
+export class UsersRepository extends Repository<Notification> {
   constructor(dataSource: DataSource) {
-    super(Users, new EntityManager(dataSource));
+    super(Notification, new EntityManager(dataSource));
   }
 
   async createUser(authCredentialsDto: AuthCredentialsDto): Promise<void> {
