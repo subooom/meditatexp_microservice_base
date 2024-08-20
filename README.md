@@ -13,6 +13,12 @@ $ git submodule update --remote --merge
 To push all the changes to the repo and the submodule at once do:
 
 ```bash
+$ cd src/constants && git add . && git commit -m "commit message"
+```
+
+After that on root directory do this:
+
+```bash
 $ git push --recurse-submodules=on-demand
 ```
 
